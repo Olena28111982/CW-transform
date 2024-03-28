@@ -1,0 +1,85 @@
+:root{
+  --logo-size:50px:
+  font-size: 16px;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+a{
+  color:inherit;
+    text-decoration: none;
+  list-style: none;
+}
+
+nav,ul,li{
+  display: inline-block;}
+
+.wrapper {
+  /* flex-відбити футер */
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  /* fixed
+  z index
+  box-shedou */
+  padding-top: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.404);
+  box-shadow: -2px -1px 13px 1px #353131;
+  
+
+}
+.general-size {
+  min-width: 1024px;
+  max-width: 1264px;
+
+  flex-grow: 1;
+
+  
+  }
+  
+.logo {
+  position: relative;
+
+  display: inline-block;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  border-radius: 50%;
+
+  background-color: black;
+  color: white;
+  text-align: center;
+ font-size: calc(var(--logo-size)/2);
+ line-height: var(--logo-size);
+}
+.logo::after{
+  content:"" ;
+  display: inline-block;
+  /* width: 50px;
+  height: 50px; */
+  border-radius: 50%;
+  background-image: linear-gradient(0, yellow 50%, blue 50%);
+  position: absolute;
+  z-index:-1;
+  top:-3px;
+  bottom:-3px;
+  left: -3px;
+  right: -3px;
+
+}
+
+.search {
+}
+.header-nav {
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-link {
+}
